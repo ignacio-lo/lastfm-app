@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_corners_border_black"
+    android:elevation="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cv_image_track"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:srcCompat="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="10dp"
+        app:shapeAppearanceOverlay="@style/CustomShapeOVerlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:id="@+id/tv_track_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:text="@string/track"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/cv_image_track"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:text="@string/artist"
+        android:textColor="@color/gray_dark"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/cv_image_track"
+        app:layout_constraintTop_toBottomOf="@id/tv_track_name"/>
+
+    <TextView
+        android:id="@+id/tv_listeners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listeners"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/cv_image_track"
+        app:layout_constraintTop_toBottomOf="@id/tv_artist_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

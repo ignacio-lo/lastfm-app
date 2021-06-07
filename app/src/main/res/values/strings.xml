@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Last Fm App</string>
+    <string name="artist">Artist</string>
+    <string name="track">Track</string>
+    <string name="listeners">Listeners</string>
+    <string name="search_no_results">No tracks found</string>
+</resources>
